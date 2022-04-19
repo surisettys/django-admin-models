@@ -1,0 +1,11 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <label for="pk">PK:</label>
+    <input type="text" name="pk" id="pk">
+    <input type="submit" value="SUBMIT">
+</form>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<h1>This page is for list students </h1>
+
+{% for student in studentlist %}
+
+<ul>
+    <li>{{student}}</li>
+</ul>
+
+{% endfor %}
+
+{% endblock %}

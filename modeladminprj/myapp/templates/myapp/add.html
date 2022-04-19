@@ -1,0 +1,16 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<h1>This page is for adding new students </h1>
+<form method="POST">
+    {% csrf_token %}
+    <label for="name"> NAME: </label>
+    <input type="text" name="name" id="name">
+    <label for="age"> age: </label>
+    <input type="text" name="age" id="age">
+    <label for="school"> School NAME: </label>
+    <input type="text" name="school" id="school">
+    <input type="submit" name="" id="" value="SUBMIT">
+
+</form>
+{% endblock %}
